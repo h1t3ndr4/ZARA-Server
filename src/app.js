@@ -9,7 +9,7 @@ app.use(express.json());
 app.listen(80, async () => {
   try {
     await connect();
-    console.log("Server is up on port 80");
+    console.log("Server is up on port 200");
   } catch (e) {
     console.log(e);
   }
