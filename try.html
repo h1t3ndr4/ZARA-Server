@@ -41,7 +41,7 @@
 <script>
 
 async function initial(){
-    let res = await fetch("http://127.0.0.1/products/")
+    let res = await fetch("http://127.0.0.1/products?price:2000")
 
     let products = await res.json()
 
