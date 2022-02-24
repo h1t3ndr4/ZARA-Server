@@ -47,10 +47,10 @@ router.get("/:highToLow", async (req, res) => {
   try {
     const products = await Product.find().lean().exec();
 
-    const high = products.sort(function(a,b){
+    const highToLow = products.sort(function(a,b){
       return b.price - a.price
     })
-    return res.send(high);
+    return res.send(highToLow);
 
   } catch (e) {
     res.status(500).send(e.message);
@@ -61,10 +61,10 @@ router.get("/:lowToHigh", async (req, res) => {
   try {
     const products = await Product.find().lean().exec();
 
-    const low = products.sort(function(a,b){
+    const lowToHigh = products.sort(function(a,b){
       return a.price - b.price
     })
-    return res.send(low);
+    return res.send(lowToHigh);
 
   } catch (e) {
     res.status(500).send(e.message);
