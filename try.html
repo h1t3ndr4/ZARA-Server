@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>login user</h1>
+    <form action="" onsubmit=loginUser(event)>
+        <input type="text" id="email" placeholder="enter your email">
+        <input type="text" id="password" placeholder="enter your password">
+        <input type="submit">
+    </form>
+
+
+    <h1>Register user</h1>
+    <form action="" onsubmit=registerUser(event)>
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="email" placeholder="enter your mail">
+        <input type="text" id="password" placeholder="password">
+        <input type="text" id="repeatPassword" placeholder="repeatPassword">
+        <input type="text" id="address" placeholder="address">
+        <input type="text" id="city" placeholder="city">
+        <input type="text" id="state" placeholder="state">
+        <input type="text" id="pincode" placeholder="pincode">
+        <input type="text" id="morenfo" placeholder="morenfo">
+        <input type="text" id="locality" placeholder="locality">
+        <input type="text" id="phone" placeholder="phone">
+        <input type="submit">
+    </form>
+
+
+
+
+</body>
+</html>
+
+<script>
+
+async function initial(){
+    let res = await fetch("http://127.0.0.1/products/")
+
+    let products = await res.json()
+
+    console.log("Products : ",products)
+}
+
+initial()
+
+
+
+    function loginUser(e){
+        e.preventDefault();
+        var form = e.target;
+        var data = {
+            email: form.email.value,
+            password: form.password.value
+        };
+        
+
+        // sending data to server in json format
+        login(JSON.stringify(data));
+    }
+
+ async  function login(data){
+       let res = await fetch("http://127.0.0.1:80/login", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+    })
+
+    let response = await res.json();
+
+    console.log(response);
+    }
+
+
+    function registerUser(e){
+        e.preventDefault();
+        var form = e.target;
+        var data = {
+            name: form.name.value,
+            email: form.email.value,
+            password: form.password.value,
+            repeatPassword: form.repeatPassword.value,
+            address: form.address.value,
+            city: form.city.value,
+            state: form.state.value,
+            pincode: form.pincode.value,
+            morenfo: form.morenfo.value,
+            locality: form.locality.value,
+            phone: form.phone.value
+        };
+        
+
+        // sending data to server in json format
+        register(JSON.stringify(data));
+    }
+
+    async function register(data){
+        let res = await fetch("http://127.0.0.1:80/register", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: data
+        })
+
+        let response = await res.json();
+
+        console.log(response);
+    }
+
+</script>
