@@ -1,7 +1,7 @@
 const User = require("../models/user.model");
 
 const jwt = require("jsonwebtoken");
-const { cookie } = require("express-validator");
+
 require("dotenv").config();
 
 const newToken = (user) => {
@@ -70,9 +70,9 @@ const login = async (req, res) => {
     
 
     // not working for some reason check later
-    res.cookie("token", token, {
-      httpOnly: true,
-    });
+    // res.cookie("token", token, {
+    //   httpOnly: true,
+    // });
 
 
     // send the token and the user
