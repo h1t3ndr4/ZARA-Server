@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
+require('dotenv').config();
+
+
 module.exports = () => {
   return mongoose.connect(
-    "mongodb+srv://divyansh:divyansh050@cluster0.pyiuj.mongodb.net/zara-server?retryWrites=true&w=majority"
+    process.env.DB_CONNECTION,
   );
 };

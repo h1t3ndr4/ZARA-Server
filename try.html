@@ -39,9 +39,13 @@
 </html>
 
 <script>
+    
+    // this is the url we use to connect to our backend
+    // https://zara-server.herokuapp.com
+
 
 async function initial(){
-    let res = await fetch("https://git.heroku.com/zara-server.git/products")
+    let res = await fetch("https://zara-server.herokuapp.com/products")
 
     let products = await res.json()
 
