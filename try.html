@@ -41,14 +41,14 @@
 <script>
 
 async function initial(){
-    let res = await fetch("http://127.0.0.1/products?price:2000")
+    let res = await fetch("https://git.heroku.com/zara-server.git/products")
 
     let products = await res.json()
 
     console.log("Products : ",products)
 }
 
-// initial()
+initial()
 
 
 

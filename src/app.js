@@ -1,6 +1,8 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 
+const PORT = process.env.PORT || 80;
+
 const connect = require("./configs/db");
 
 const productController = require("./controllers/product.controller");
@@ -19,10 +21,10 @@ app.post("/register", register);
 
 app.post("/login", login);
 
-app.listen(80, async () => {
+app.listen(PORT, async () => {
   try {
     await connect();
-    console.log("Server is up on port 200");
+    console.log("Server is up on port " + PORT);
   } catch (e) {
     console.log(e);
   }
