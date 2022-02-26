@@ -34,10 +34,10 @@ const register = async (req, res) => {
     const newUser = await User.create(req.body);
 
     // create a new token for the user
-    const token = newToken(newUser);
+    // const token = newToken(newUser);
 
     // send the token and the user
-    return res.status(201).send({ newUser, token });
+    return res.status(201).send({ newUser });
   } catch (e) {
     return res.status(500).send(e.message);
   }

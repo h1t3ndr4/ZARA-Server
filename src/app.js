@@ -22,7 +22,7 @@ app.post("/login", login);
 app.listen(80, async () => {
   try {
     await connect();
-    console.log("Server is up on port 200");
+    console.log("Server is up on port 80");
   } catch (e) {
     console.log(e);
   }
