@@ -7,7 +7,7 @@ In this project we have tried to make a replica of ZARA Website. With our effort
 ## Clone the project
 
 ```bash
-git clone: https://github.com/divyansh050/ZARA-server
+git clone https://github.com/divyansh050/ZARA-server
 ```  
   
 ## Install npm packages
