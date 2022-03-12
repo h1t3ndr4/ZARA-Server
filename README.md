@@ -26,10 +26,6 @@ npm start
 
 In this project we have used the following technologies :
 
-<img src="https://cdn-icons-png.flaticon.com/512/226/226269.png" width=20/> HTML
-
-<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width=20 /> CSS
-
 <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width=20/> JavaScript
 
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width=20/> NodeJS
