@@ -1,58 +1,69 @@
-<h1>ZARA (Clone) </h1> 
-
-**Project**: https://zara-replica.netlify.app/
+# Zara Server
 
 In this project we have tried to make a replica of ZARA Website. With our efforts and the technology stack, that we have learned till now in Unit-4 in Masai School, we were able to clone the front-end, integrated it with backend and added similar looks and features.
 
 <h2>Run Locally</h2>
 
-**Clone the project**
+## Clone the project
 
-  <li> git clone: https://github.com/divyansh050/ZARA-server </li> </br>
+```bash
+git clone: https://github.com/divyansh050/ZARA-server
+```  
   
-  
-**Install npm packages**
+## Install npm packages
 
-<li> npm install </li> </br>
+```bash
+npm install
+```
 
-**Run the server**
+## Run the server
 
-<li> npm start </li>
+```bash
+npm start
+```
 
-<h2>Tech Stack :</h2>
-In this project we have used the following technologies: </br></br>
+## Tech Stack :
 
-<li> Node js </li>
-<li> Express js </li>
-<li> MongoDB </li>
-<li> JavaScript </li> </br>
+In this project we have used the following technologies :
+
+- NodeJs
+- ExpressJs
+- MongoDB 
+- JavaScript 
 
 All the data got stored in and called from _**Mongo Atlas cloud database**_.
 
-<h2> Libraries & Packages </h2> 
+## Libraries & Packages
 
-<h4> NPM Packages </h4>
+### NPM Packages
 
+- express
+- mongoose
+- jsonwebtoken
+- bcryptjs
+- cors
+- nodemailer
+- dotenv
 
-<li> express </li>
-<li> mongoose </li>
-<li> jsonwebtoken </li>
-<li> bcryptjs </li>
-<li> cors </li>
-<li> nodemailer </li>
-<li> dotenv </li>
+Contributors :
 
-<h2> Team Members </h2>
-<h3> Divyansh Singh Sikarwar </h3>
-<ol> Github : https://github.com/divyansh050 </ol>
-<h3> Hitendra Mali </h3>
-<ol> Github : https://github.com/h1t3ndr4 </ol>
-<h3> Anjum Ara </h3>
-<ol> Github : https://github.com/anjumara07 </ol>
-<h3> Himanshu Sharma </h3>
-<ol> Github : https://github.com/sharmahimansh007 </ol>
-<h3> Babli Kumari </h3>
-<ol> Github : https://github.com/bablikumari2 </ol>
-<h3> Rohit </h3>
-<ol> Github : https://github.com/Rohitb1107 </ol>
+- Divyansh Singh Sikarwar : https://github.com/divyansh050
+
+- Hitendra Mali : https://github.com/h1t3ndr4
+
+- Anjum Ara : https://github.com/anjumara07
+
+- Babli kumari : https://github.com/bablikumari2
+
+- Himanshu Sharma : https://github.com/sharmahimansh007
+
+- Rohit : https://github.com/Rohitb1107
+
+## Our blog link :
+
+https://h1t3ndr4.medium.com/cloning-of-zara-website-1e54f1e590ef
+
+## Deploy Link :
+
+https://zara-replica.netlify.app/
 
