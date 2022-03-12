@@ -26,13 +26,13 @@ npm start
 
 In this project we have used the following technologies :
 
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width=20/> Node js
+<img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width=20/> JavaScript
 
-<img src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-thumbnail.png" width=20 /> Express js
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" width=20/> NodeJS
+
+<img src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-thumbnail.png" width=20 /> ExpressJS
 
 <img src="https://w1.pngwing.com/pngs/711/379/png-transparent-green-grass-mongodb-database-documentoriented-database-dashboard-nosql-bson-javascript-thumbnail.png" width=20/> MongoDB
-
-<img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width=20/> JavaScript
 
 All the data got stored in and called from _**Mongo Atlas cloud database**_.
 
